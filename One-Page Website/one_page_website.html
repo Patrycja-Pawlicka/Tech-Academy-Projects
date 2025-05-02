@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Animals</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- NAVIGATION -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#video">Video</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HOME SECTION -->
+  <section id="home" class="section">
+    <h1>ANIMALS</h1>
+    <p>Welcome to my animal-themed website! Scroll down to explore more.</p>
+  </section>
+
+  <!-- PHOTO CONTAINER -->
+  <section id="gallery" class="section">
+    <h2>My Favorite Animals</h2>
+    <div class="gallery">
+      <img src="Images/Thumb/thumbnail_1.jpg" alt="Elk" onclick="openPopup(this)">
+      <img src="Images/Thumb/thumbnail_2.jpg" alt="Polar Bear" onclick="openPopup(this)">
+      <img src="Images/Thumb/thumbnail_3.jpg" alt="Monkey" onclick="openPopup(this)">
+      <img src="Images/Thumb/thumbnail_4.jpg" alt="Lion" onclick="openPopup(this)">
+      <img src="Images/Thumb/thumbnail_5.jpg" alt="Goat" onclick="openPopup(this)">
+      <img src="Images/Thumb/thumbnail_6.jpg" alt="Elephant" onclick="openPopup(this)">
+      <img src="Images/Thumb/thumbnail_7.jpg" alt="Cheetah" onclick="openPopup(this)">
+      <img src="Images/Thumb/thumbnail_8.jpg" alt="Rabbit" onclick="openPopup(this)">
+      <img src="Images/Thumb/thumbnail_9.jpg" alt="Bear" onclick="openPopup(this)">
+    </div>
+  </section>
+  <!-- END PHOTO CONTAINER -->
+
+<!-- VIDEO SECTION -->
+<section id="video" class="section">
+    <h2>Cool Deer Video</h2>
+    <video width="560" height="315" controls>
+      <source src="Videos/animal_video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <form>
+      <label for="name">Name:</label><br />
+      <input type="text" id="name" name="name" /><br /><br />
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Made with love by Patrycja &copy; 2025</p>
+  </footer>
+
+  <!-- POPUP IMAGE MODAL -->
+  <div id="popup" class="popup">
+    <span onclick="closePopup()" class="close">&times;</span>
+    <img id="popup-img" src="" alt="">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
