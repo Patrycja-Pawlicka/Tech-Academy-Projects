@@ -1,0 +1,7 @@
+ul {
+    list-style-type: square;  /* Makes bullet points into squares */
+  }
+  
+ol {
+    list-style-type: upper-roman;  /* Changes numbers to Roman numerals */
+  }

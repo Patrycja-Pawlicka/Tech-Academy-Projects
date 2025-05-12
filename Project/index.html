@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My First Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <h1>Welcome to My Website! &hearts;</h1>
+    <p>This is a <em>basic website</em> that I built myself for this course! &copy; 2025</p>
+    <hr>
+  </header>
+  <!-- END HEADER -->
+
+  <!-- ABOUT ME SECTION -->
+  <section>
+    <h2>About Me</h2>
+    <p>
+      Hi! My name is <span class="highlight">Patrycja</span> and I'm learning HTML, CSS and JavaScript. <br>
+      I'm proud of what I’ve built today&nbsp;and this is just the beginning.
+    </p>
+  </section>
+  <!-- END ABOUT ME SECTION -->
+
+  <!-- FUN GAME LINK -->
+  <section>
+    <p>
+      Wanna play a game? Try the classic 
+      <a href="https://g.co/kgs/M9TceXr" target="_blank">Google Snake Game</a>!
+    </p>
+  </section>
+  <!-- END FUN GAME LINK -->
+
+  <!-- FAVORITE FOODS LIST -->
+  <section>
+    <h2>My Favorite Foods</h2>
+    <ul>
+      <li>Pizza</li>
+      <li>Sushi</li>
+      <li>Chocolate</li>
+    </ul>
+
+    <h3>Things I Want to Learn Next:</h3>
+    <ol>
+      <li>Builing cool games</li>
+      <li>Play ukulele!</li>
+    </ol>
+  </section>
+  <!-- END FAVORITE FOODS LIST -->
+
+  <!-- PHOTO CONTAINER -->
+  <section>
+    <h2>Here are my favourite animals!</h2>
+    <div class="gallery">
+      <img src="Images/Thumb/thumbnail_1.jpg" alt="Elk" onclick="openPopup(this)">
+      <img src="Images/Thumb/thumbnail_2.jpg" alt="Polar Bear" onclick="openPopup(this)">
+      <img src="Images/Thumb/thumbnail_3.jpg" alt="Monkey" onclick="openPopup(this)">
+      <img src="Images/Thumb/thumbnail_4.jpg" alt="Lion" onclick="openPopup(this)">
+      <img src="Images/Thumb/thumbnail_5.jpg" alt="Goat" onclick="openPopup(this)">
+      <img src="Images/Thumb/thumbnail_6.jpg" alt="Elephant" onclick="openPopup(this)">
+      <img src="Images/Thumb/thumbnail_7.jpg" alt="Cheetah" onclick="openPopup(this)">
+      <img src="Images/Thumb/thumbnail_8.jpg" alt="Rabbit" onclick="openPopup(this)">
+      <img src="Images/Thumb/thumbnail_9.jpg" alt="Bear" onclick="openPopup(this)">
+    </div>
+  </section>
+  <!-- END PHOTO CONTAINER -->
+
+  <!-- COOL THINGS TABLE -->
+  <section>
+    <h2>My Table of Cool Things</h2>
+    <table>
+      <tr>
+        <th>Thing</th>
+        <th>Why I Love It</th>
+      </tr>
+      <tr>
+        <td>Coding</td>
+        <td>Because I can create whatever I imagine!</td>
+      </tr>
+      <tr>
+        <td>Music</td>
+        <td>It makes life feel cinematic.</td>
+      </tr>
+    </table>
+  </section>
+  <!-- END COOL THINGS TABLE -->
+
+  <!-- CONTACT FORM -->
+  <section>
+    <h2>Contact Me</h2>
+    <form>
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name"><br><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email"><br><br>
+      <input type="submit" value="Submit">
+    </form>
+  </section>
+  <!-- END CONTACT FORM -->
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Thanks for visiting my site! &nbsp;&nbsp;Come back soon. 😄</p>
+  </footer>
+  <!-- END FOOTER -->
+
+  <!-- JAVASCRIPT LINK -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+table {
+    background-color: #f0f8ff; /* Light blue background */
+    color: #333333;            /* Dark gray text */
+    border: 2px solid #4a90e2;
+    border-collapse: collapse;
+    width: 60%;
+    margin: auto;
+  }
+
+  td, th {
+    border: 1px solid #999;
+    padding: 10px;
+    text-align: center;
+  }
+  tr:hover {
+    background-color: #d6eaff; /* Highlight row on hover */
+  }
