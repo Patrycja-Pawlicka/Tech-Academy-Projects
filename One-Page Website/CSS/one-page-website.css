@@ -108,3 +108,54 @@ body {
     max-width: 100%;
     height: auto;
   }
+
+  /* Form Input Styling */
+form input[type="text"],
+form input[type="email"],
+form input[type="submit"] {
+    width: 300px; /* You can adjust as you like */
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    display: block; /* Ensures they stack nicely on top of each other */
+}
+
+form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Fun Facts Section */
+#fun-facts {
+    background-color: #e3ebdf;
+    padding: 40px;
+    margin-top: 50px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#fun-facts h2 {
+    text-align: center;
+    color: #2c7e4b;
+    font-family: 'Chewy', cursive;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#fun-facts ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#fun-facts li {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    color: #4E342E;
+}
