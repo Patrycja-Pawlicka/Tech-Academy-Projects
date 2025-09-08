@@ -73,35 +73,8 @@ body {
     padding: 15px;
     color: white;
   }
-  
-  /* POPUP IMAGE */
-  .popup {
-    display: none;
-    position: fixed;
-    z-index: 100;
-    left: 0; top: 0;
-    width: 100vw; height: 100vh;
-    background-color: rgba(0,0,0,0.7);
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .popup img {
-    max-width: 90%;
-    max-height: 90%;
-    border-radius: 10px;
-    box-shadow: 0 0 20px #000;
-  }
-  
-  .close {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    font-size: 40px;
-    color: white;
-    cursor: pointer;
-  }
 
+  /* Video styling */
   video {
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
@@ -113,7 +86,7 @@ body {
 form input[type="text"],
 form input[type="email"],
 form input[type="submit"] {
-    width: 300px; /* You can adjust as you like */
+    width: 300px; 
     margin-bottom: 15px;
     padding: 8px;
     border: 2px solid #333;
@@ -159,3 +132,69 @@ form input[type="submit"]:hover {
     font-size: 1.1em;
     color: #4E342E;
 }
+
+/* Lightbox styles */
+.lb-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.8);
+  display: none;                 /* hidden by default */
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Show state */
+.lb-backdrop.lb-open { display: flex; }
+
+/* Content */
+.lb-figure {
+  margin: 0;
+  max-width: min(92vw, 1200px);
+  max-height: 90vh;
+  display: grid;
+  gap: .5rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.lb-figure img {
+  max-width: 100%;
+  max-height: 80vh;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 10px 40px rgba(0,0,0,.5);
+}
+
+.lb-figure figcaption {
+  color: #f3f3f3;
+  font: 500 16px/1.4 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  text-align: center;
+  max-width: 80ch;
+}
+
+/* Controls */
+.lb-close,
+.lb-arrow {
+  position: absolute;
+  border: 0;
+  background: none;
+  color: #fff;
+  font-size: 34px;
+  line-height: 1;
+  cursor: pointer;
+  padding: .45rem .7rem;
+  transition: opacity .15s ease;
+  opacity: .9;
+}
+
+.lb-close:hover,
+.lb-arrow:hover { opacity: 1; }
+
+.lb-close { top: 14px; right: 18px; }
+.lb-arrow { top: 50%; transform: translateY(-50%); }
+.lb-prev  { left: 14px; }
+.lb-next  { right: 14px; }
+
+/* Prevent background scroll when open */
+body.lb-lock { overflow: hidden; }

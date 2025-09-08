@@ -27,15 +27,15 @@
   <section id="gallery" class="section">
     <h2>My Favorite Animals</h2>
     <div class="gallery">
-      <img src="Images/Thumb/thumbnail_1.jpg" alt="Elk" onclick="openPopup(this)">
-      <img src="Images/Thumb/thumbnail_2.jpg" alt="Polar Bear" onclick="openPopup(this)">
-      <img src="Images/Thumb/thumbnail_3.jpg" alt="Monkey" onclick="openPopup(this)">
-      <img src="Images/Thumb/thumbnail_4.jpg" alt="Lion" onclick="openPopup(this)">
-      <img src="Images/Thumb/thumbnail_5.jpg" alt="Goat" onclick="openPopup(this)">
-      <img src="Images/Thumb/thumbnail_6.jpg" alt="Elephant" onclick="openPopup(this)">
-      <img src="Images/Thumb/thumbnail_7.jpg" alt="Cheetah" onclick="openPopup(this)">
-      <img src="Images/Thumb/thumbnail_8.jpg" alt="Rabbit" onclick="openPopup(this)">
-      <img src="Images/Thumb/thumbnail_9.jpg" alt="Bear" onclick="openPopup(this)">
+      <img src="Images/Thumb/thumbnail_1.jpg" alt="Elk" data-lightbox="animals">
+      <img src="Images/Thumb/thumbnail_2.jpg" alt="Polar Bear" data-lightbox="animals">
+      <img src="Images/Thumb/thumbnail_3.jpg" alt="Monkey" data-lightbox="animals">
+      <img src="Images/Thumb/thumbnail_4.jpg" alt="Lion" data-lightbox="animals">
+      <img src="Images/Thumb/thumbnail_5.jpg" alt="Goat" data-lightbox="animals">
+      <img src="Images/Thumb/thumbnail_6.jpg" alt="Elephant" data-lightbox="animals">
+      <img src="Images/Thumb/thumbnail_7.jpg" alt="Cheetah" data-lightbox="animals">
+      <img src="Images/Thumb/thumbnail_8.jpg" alt="Rabbit" data-lightbox="animals">
+      <img src="Images/Thumb/thumbnail_9.jpg" alt="Bear" data-lightbox="animals">
     </div>
   </section>
   <!-- END PHOTO CONTAINER -->
@@ -82,10 +82,15 @@
     <p>Made with love by Patrycja &copy; 2025</p>
   </footer>
 
-  <!-- POPUP IMAGE MODAL -->
-  <div id="popup" class="popup">
-    <span onclick="closePopup()" class="close">&times;</span>
-    <img id="popup-img" src="" alt="">
+  <!-- LIGHTBOX OVERLAY -->
+  <div class="lb-backdrop" id="lightbox" aria-hidden="true">
+    <button class="lb-close" id="lbClose" aria-label="Close">&times;</button>
+    <button class="lb-arrow lb-prev" id="lbPrev" aria-label="Previous">&#10094;</button>
+    <figure class="lb-figure">
+      <img id="lbImage" alt="">
+      <figcaption id="lbCaption"></figcaption>
+    </figure>
+    <button class="lb-arrow lb-next" id="lbNext" aria-label="Next">&#10095;</button>
   </div>
 
   <script src="script.js"></script>
